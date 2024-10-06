@@ -41,95 +41,62 @@ public class Home {
     @FXML
     private Button roupas;
 
-    FXMLLoader fxmlLoader = new FXMLLoader();
-
     @FXML
     void AcessCarros(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(getClass().getResource("Carros.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.setTitle("Carros");
-        stage.show();
-
-
+        loadScene("Carros.fxml", "Carros");
     }
 
     @FXML
     void AcessCel(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(getClass().getResource("Celulares.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.setTitle("Celulares");
-        stage.show();
-
+        loadScene("Celulares.fxml", "Celulares");
     }
 
     @FXML
-    void AcessGuitar(ActionEvent event) {
-
+    void AcessGuitar(ActionEvent event) throws IOException {
+        loadScene("Guitars.fxml", "Guitars");
     }
 
     @FXML
-    void AcessMenu(ActionEvent event) {
-
+    void AcessMenu(ActionEvent event) throws IOException {
+        loadScene("Computadores.fxml", "Computadores");
     }
 
     @FXML
-    void AcessPessoas(ActionEvent event) {
-
+    void AcessPessoas(ActionEvent event) throws IOException {
+        loadScene("Pessoas.fxml", "Pessoas");
     }
 
     @FXML
-    void AcessPortas(ActionEvent event) {
-
+    void AcessPortas(ActionEvent event) throws IOException {
+        loadScene("Portas.fxml", "Portas");
     }
 
     @FXML
     void AcessRelogio(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(ExecuteApplication.class.getResource("Relogios.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Relógios");
-        stage.setScene(scene);
-        stage.show();
-
+        loadScene("Relogios.fxml", "Relógios");
     }
-
 
     @FXML
     void acessAlunos(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(ExecuteApplication.class.getResource("Alunos.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Alunos");
-        stage.setScene(scene);
-        stage.show();
-
+        loadScene("Alunos.fxml", "Alunos");
     }
 
     @FXML
     void acessCaes(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(ExecuteApplication.class.getResource("Caes.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Cães");
-        stage.setScene(scene);
-        stage.show();
-
+        loadScene("Caes.fxml", "Cães");
     }
 
     @FXML
     void acessRoupas(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(ExecuteApplication.class.getResource("Roupas.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Roupas");
-        stage.setScene(scene);
-        stage.show();
-
-
+        loadScene("Roupas.fxml", "Roupas");
     }
 
+    private void loadScene(String fxmlPage, String namePage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlPage));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle(namePage);
+        stage.show();
+    }
 }

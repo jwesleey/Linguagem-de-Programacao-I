@@ -3,12 +3,15 @@ package org.example.interfaceclasses;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 
-public class CaesController {
+import java.net.URL;
 
+public class CaesController {
 
     @FXML
     private Button back;
@@ -23,43 +26,59 @@ public class CaesController {
     private Button btnlatir;
 
     @FXML
-    private Label label1;
-
-    @FXML
-    private Label label2;
-
-    @FXML
-    private Label label3;
-
-    @FXML
     private AnchorPane pageCaes;
-    Caes caes = new Caes();
+
+    @FXML
+    private MediaView mediaplayer;
+
 
     @FXML
     void actbrincar(ActionEvent event) {
-        label3.setText(caes.brincar());
-        label3.setVisible(true);
+        startvideo("/org/example/interfaceclasses/midia/playing.mp4");
     }
 
     @FXML
     void actdeitar(ActionEvent event) {
-        label2.setText(caes.deitar());
-        label2.setVisible(true);
+        startvideo("/org/example/interfaceclasses/midia/sleeping.mp4");
     }
 
     @FXML
     void actlatir(ActionEvent event) {
-        label1.setText(caes.latir());
-        label1.setVisible(true);
+        startvideo("/org/example/interfaceclasses/midia/woof.mp4");
     }
 
     @FXML
     void backhome(ActionEvent event) {
         Stage stage = (Stage) pageCaes.getScene().getWindow();
         stage.close();
-
     }
 
+    private MediaPlayer mediaPlayer;
+
+    @FXML
+    private void startvideo(String myvideo) {
+        URL caminho = getClass().getResource(myvideo);
+
+        if (caminho != null) {
+            System.out.println("Caminho do vídeo: " + caminho);
+            if (mediaPlayer != null) {
+                mediaPlayer.stop();
+            }
+            Media media = new Media(caminho.toExternalForm());
+            mediaPlayer = new MediaPlayer(media);
+            mediaplayer.setMediaPlayer(mediaPlayer);
+            mediaplayer.setVisible(true);
+            mediaPlayer.play();
+
+            mediaPlayer.setOnEndOfMedia(() -> {
+                mediaPlayer.stop();
+                mediaplayer.setVisible(false);
+            });
+
+        } else {
+            System.out.println("Não encontrado");
+        }
+    }
 }
 
 
