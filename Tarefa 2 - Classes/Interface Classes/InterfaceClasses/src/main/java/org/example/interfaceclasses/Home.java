@@ -58,7 +58,7 @@ public class Home {
 
     @FXML
     void AcessMenu(ActionEvent event) throws IOException {
-        loadScene("Menu.fxml", "Menu");
+        loadScene("Computadores.fxml", "Computadores");
     }
 
     @FXML
