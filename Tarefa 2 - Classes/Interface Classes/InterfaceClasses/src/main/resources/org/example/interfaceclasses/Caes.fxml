@@ -40,6 +40,6 @@
             </children>
         </GridPane>
         <Button fx:id="back" layoutX="820.0" layoutY="560.0" mnemonicParsing="false" onAction="#backhome" text="Voltar" />
-      <MediaView fx:id="mediaplayer" fitHeight="500.0" fitWidth="400.0" layoutX="1000.0" layoutY="177.0" nodeOrientation="INHERIT" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0" />
+      <MediaView fx:id="mediaplayer" fitHeight="500.0" fitWidth="400.0" layoutX="414.0" layoutY="73.0" nodeOrientation="INHERIT" AnchorPane.leftAnchor="414.0" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="73.0" />
     </children>
 </AnchorPane>

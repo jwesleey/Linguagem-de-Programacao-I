@@ -10,6 +10,7 @@ import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.Objects;
 
 public class PessoasController {
 
@@ -33,19 +34,19 @@ public class PessoasController {
 
     @FXML
     void actcomemorar(ActionEvent event) {
-        startvideo("org/example/interfaceclasses/midia/happy.mp4");
+        startvideo("/org/example/interfaceclasses/midia/happy.mp4");
 
     }
 
     @FXML
     void actinteragir(ActionEvent event) {
-        startvideo("org/example/interfaceclasses/midia/hi.mp4");
+        startvideo("/org/example/interfaceclasses/midia/hi.mp4");
 
     }
 
     @FXML
     void actsorrir(ActionEvent event) {
-        startvideo("org/example/interfaceclasses/midia/smile.mp4");
+        startvideo("/org/example/interfaceclasses/midia/smile.mp4");
 
     }
 
@@ -80,5 +81,10 @@ public class PessoasController {
         } else {
             System.out.println("Não encontrado");
         }
+    }
+    @FXML
+    public void initialize() {
+        String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();
+        pagePessoas.getStylesheets().add(css);
     }
 }

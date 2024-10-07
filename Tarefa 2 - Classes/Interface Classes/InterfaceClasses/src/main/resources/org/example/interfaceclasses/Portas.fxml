@@ -16,19 +16,19 @@
                 <Font name="Arial" size="18.0" />
             </font>
         </Label>
-        <GridPane alignment="CENTER" hgap="5.0" layoutX="-70.0" layoutY="416.0" prefHeight="56.0" prefWidth="490.0" vgap="5.0" AnchorPane.leftAnchor="-70.0" AnchorPane.rightAnchor="221.2" AnchorPane.topAnchor="416.0">
+        <GridPane alignment="CENTER" hgap="5.0" layoutX="80.0" layoutY="409.0" maxHeight="60.0" maxWidth="600.0" prefHeight="44.0" prefWidth="449.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="409.0">
             <columnConstraints>
-                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="0.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="0.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="0.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button fx:id="btnabrir" mnemonicParsing="false" onAction="#actabrir" prefHeight="30.0" prefWidth="100.0" text="Abrir Porta" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-                <Button fx:id="btnfechar" mnemonicParsing="false" onAction="#actfechar" prefHeight="30.0" prefWidth="100.0" text="Fechar Porta" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-                <Button fx:id="btntrancar" mnemonicParsing="false" onAction="#acttrancar" prefHeight="30.0" prefWidth="100.0" text="Trancar Porta" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Button fx:id="btnabrir" mnemonicParsing="false" onAction="#actabrir" prefHeight="30.0" prefWidth="175.0" text="Abrir Porta" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Button fx:id="btnfechar" mnemonicParsing="false" onAction="#actfechar" prefHeight="30.0" prefWidth="140.0" text="Fechar Porta" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Button fx:id="btntrancar" mnemonicParsing="false" onAction="#acttrancar" prefHeight="30.0" prefWidth="178.0" text="Trancar Porta" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
                 <Label fx:id="label3" text="Label" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" />
             </children>
         </GridPane>

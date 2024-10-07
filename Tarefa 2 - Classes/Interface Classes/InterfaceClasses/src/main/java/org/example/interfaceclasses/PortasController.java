@@ -11,6 +11,7 @@ import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.Objects;
 
 public class PortasController {
 
@@ -37,19 +38,19 @@ public class PortasController {
 
     @FXML
     void actabrir(ActionEvent event) {
-        startvideo("/C:/Users/jwesl/Documents/FATEC/Linguagem%20de%20Programacao%20I/Tarefa%202%20-%20Classes/Interface%20Classes/InterfaceClasses/target/classes/org/example/interfaceclasses/midia/open.mp4");
+        startvideo("/org/example/interfaceclasses/midia/open.mp4");
 
     }
 
     @FXML
     void actfechar(ActionEvent event) {
-        startvideo("org/example/interfaceclasses/midia/close.mp4");
+        startvideo("/org/example/interfaceclasses/midia/close.mp4");
 
     }
 
     @FXML
     void acttrancar(ActionEvent event) {
-        startvideo("org/example/interfaceclasses/midia/lock.mp4");
+        startvideo("/org/example/interfaceclasses/midia/lock.mp4");
 
     }
 
@@ -85,6 +86,13 @@ public class PortasController {
         } else {
             System.out.println("Não encontrado");
         }
+
+    }
+
+    @FXML
+    public void initialize() {
+        String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();
+        pageDoors.getStylesheets().add(css);
     }
 }
 

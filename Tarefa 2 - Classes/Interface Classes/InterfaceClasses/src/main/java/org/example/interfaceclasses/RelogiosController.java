@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class RelogiosController {
 
     @FXML
@@ -54,6 +56,11 @@ public class RelogiosController {
         Stage stage = (Stage) pageRelogios.getScene().getWindow();
         stage.close();
 
+    }
+    @FXML
+    public void initialize() {
+        String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();
+        pageRelogios.getStylesheets().add(css);
     }
 
 }

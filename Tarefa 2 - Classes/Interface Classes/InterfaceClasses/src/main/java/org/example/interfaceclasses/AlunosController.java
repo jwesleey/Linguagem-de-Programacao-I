@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class AlunosController {
 
     @FXML
@@ -56,5 +58,11 @@ public class AlunosController {
     public void backhome(ActionEvent actionEvent) {
         Stage stage = (Stage) pageAlunos.getScene().getWindow();
         stage.close();
+    }
+
+    @FXML
+    public void initialize() {
+        String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();
+        pageAlunos.getStylesheets().add(css);
     }
 }

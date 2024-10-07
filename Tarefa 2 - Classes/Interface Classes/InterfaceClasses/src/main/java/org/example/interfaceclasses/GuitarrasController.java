@@ -9,66 +9,58 @@ import javafx.stage.Stage;
 
 import java.util.Objects;
 
-public class CarrosController {
+public class GuitarrasController {
 
     @FXML
     private Button back;
 
     @FXML
-    private Button btnacelerar;
+    private Button btnafinar;
 
     @FXML
-    private Button btnbuzinar;
+    private Button btnnota;
 
     @FXML
-    private Button btnreduzir;
+    private Button btntocar;
 
     @FXML
     private Label label1;
 
     @FXML
-    private Label label2;
+    private AnchorPane pageGuitarras;
+
+    Guitarras guitarras = new Guitarras();
 
     @FXML
-    private Label label3;
-
-    @FXML
-    private AnchorPane pageCars;
-
-    Carros carros = new Carros();
-
-    @FXML
-    void actacelerar(ActionEvent event) {
-        label1.setText(carros.acelerar());
+    void actafinar(ActionEvent event) {
+        label1.setText(guitarras.afinar());
         label1.setVisible(true);
 
+    }
+
+    @FXML
+    void actnota(ActionEvent event) {
+        label1.setText(guitarras.verificarNota());
+        label1.setVisible(true);
 
     }
 
     @FXML
-    void actbuzinar(ActionEvent event) {
-        label3.setText(carros.buzinar());
-        label3.setVisible(true);
-
-    }
-
-    @FXML
-    void actreduzir(ActionEvent event) {
-        label2.setText(carros.reduzir());
-        label2.setVisible(true);
+    void acttocar(ActionEvent event) {
+        label1.setText(guitarras.tocar());
+        label1.setVisible(true);
 
     }
 
     @FXML
     void backhome(ActionEvent event) {
-        Stage stage = (Stage) pageCars.getScene().getWindow();
+        Stage stage = (Stage) back.getScene().getWindow();
         stage.close();
 
     }
     @FXML
     public void initialize() {
         String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();
-        pageCars.getStylesheets().add(css);
+        pageGuitarras.getStylesheets().add(css);
     }
-
 }

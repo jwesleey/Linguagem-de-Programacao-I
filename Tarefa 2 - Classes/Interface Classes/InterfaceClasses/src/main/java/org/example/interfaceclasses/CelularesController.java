@@ -10,6 +10,7 @@ import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.Objects;
 
 
 public class CelularesController {
@@ -87,5 +88,10 @@ public class CelularesController {
         } else {
             System.out.println("Não encontrado.");
         }
+    }
+    @FXML
+    public void initialize() {
+        String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();
+        pageCel.getStylesheets().add(css);
     }
 }

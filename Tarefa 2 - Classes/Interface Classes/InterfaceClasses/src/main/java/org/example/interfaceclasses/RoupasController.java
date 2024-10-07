@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class RoupasController {
 
     @FXML
@@ -62,5 +64,9 @@ public class RoupasController {
         stage.close();
 
     }
-
+    @FXML
+    public void initialize() {
+        String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();
+        pageRoupas.getStylesheets().add(css);
+    }
 }

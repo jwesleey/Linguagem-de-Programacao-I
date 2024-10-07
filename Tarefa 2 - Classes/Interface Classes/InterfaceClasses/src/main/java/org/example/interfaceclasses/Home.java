@@ -5,9 +5,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Objects;
 
 public class Home {
 
@@ -42,6 +45,9 @@ public class Home {
     private Button roupas;
 
     @FXML
+    private AnchorPane homepage;
+
+    @FXML
     void AcessCarros(ActionEvent event) throws IOException {
         loadScene("Carros.fxml", "Carros");
     }
@@ -53,7 +59,7 @@ public class Home {
 
     @FXML
     void AcessGuitar(ActionEvent event) throws IOException {
-        loadScene("Guitars.fxml", "Guitars");
+        loadScene("Guitarras.fxml", "Guitarras");
     }
 
     @FXML
@@ -99,4 +105,11 @@ public class Home {
         stage.setTitle(namePage);
         stage.show();
     }
+
+    @FXML
+    public void initialize() {                                                                                                                                           
+        String css = Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm();    
+        homepage.getStylesheets().add(css);
+    }
+
 }
