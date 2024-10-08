@@ -17,12 +17,12 @@
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="344.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="194.0" fitWidth="270.0" layoutX="347.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/ClasseAlunos.jpg" />
          </image>
       </ImageView>
-      <GridPane hgap="10.0" layoutX="40.0" layoutY="222.0" prefHeight="200.0" prefWidth="400.0" vgap="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+      <GridPane hgap="10.0" layoutX="-4.8" layoutY="259.0" prefHeight="164.0" prefWidth="605.0" vgap="10.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="40.0">
         <columnConstraints>
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="211.20001220703125" minWidth="10.0" prefWidth="134.4000442504883" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.3999832153321" minWidth="10.0" prefWidth="395.1999557495117" />
@@ -41,7 +41,7 @@
             <Label fx:id="label3" text="Label" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="49.0" prefHeight="119.0" prefWidth="247.0" text="Durante a aula de Linguagem de programação alguns alunos tiveram dúvidas... E você tem alguma dúvida?" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="91.0" prefHeight="119.0" prefWidth="247.0" text="Durante a aula de Linguagem de programação alguns alunos tiveram dúvidas... E você tem alguma dúvida?" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" wrapText="true">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>

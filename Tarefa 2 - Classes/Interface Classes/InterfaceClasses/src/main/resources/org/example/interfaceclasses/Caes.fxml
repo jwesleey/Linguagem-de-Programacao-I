@@ -23,7 +23,7 @@
                 <Image url="@images/ClasseCaes.jpg" />
             </image>
         </ImageView>
-        <GridPane layoutX="144.0" layoutY="12.0" prefHeight="51.0" prefWidth="253.0" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="503.0">
+        <GridPane hgap="5.0" layoutX="414.0" layoutY="534.0" prefHeight="51.0" prefWidth="372.0" AnchorPane.leftAnchor="414.0" AnchorPane.rightAnchor="114.79999999999995">
             <columnConstraints>
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="211.20001220703125" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="211.20001220703125" minWidth="10.0" prefWidth="100.0" />
@@ -40,6 +40,6 @@
             </children>
         </GridPane>
         <Button fx:id="back" layoutX="820.0" layoutY="560.0" mnemonicParsing="false" onAction="#backhome" text="Voltar" />
-      <MediaView fx:id="mediaplayer" fitHeight="500.0" fitWidth="400.0" layoutX="414.0" layoutY="73.0" nodeOrientation="INHERIT" AnchorPane.leftAnchor="414.0" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="73.0" />
+      <MediaView fx:id="mediaplayer" fitHeight="460.0" fitWidth="400.0" layoutX="414.0" layoutY="73.0" nodeOrientation="INHERIT" AnchorPane.leftAnchor="414.0" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="73.0" />
     </children>
 </AnchorPane>
