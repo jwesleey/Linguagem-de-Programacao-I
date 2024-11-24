@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="pageRelogios" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
             prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interfaceclasses.RelogiosController">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interfaceclasses.Controllers.RelogiosController">
     <children>
         <ImageView fitHeight="480.0" fitWidth="640.0" layoutX="267.0" nodeOrientation="INHERIT" pickOnBounds="true"
                    preserveRatio="true" AnchorPane.rightAnchor="0.0">

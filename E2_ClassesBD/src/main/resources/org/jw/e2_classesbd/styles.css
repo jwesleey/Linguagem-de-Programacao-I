@@ -1,0 +1,107 @@
+.button {
+    -fx-background-color: #42cce3;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+}
+
+.button:hover {
+    -fx-background-color: #086d75;
+}
+
+.button:pressed {
+    -fx-background-color: #1f3385;
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+
+.vbox {
+    -fx-background-color: #FAF8E4;
+    -fx-padding: 20;
+}
+
+.text-area {
+    -fx-border-radius: 5;
+    -fx-background-color: #FFF5E1;
+    -fx-border-color: #8E8E8E;
+    -fx-border-width: 2;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+}
+
+.ListView {
+    -fx-background-color: #e7e7e7;
+    -fx-border-color: #e5dfdf;
+    -fx-border-width: 1px
+}
+
+#listA .table-cell {
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+}
+
+#listA .table-column {
+    -fx-alignment: center;
+}
+
+#listA .table-row-cell:hover {
+    -fx-background-color: #bbbbbb;
+}
+
+#listA .table-row-cell:selected {
+    -fx-background-color: #829ebd;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#listA .column-header {
+    -fx-background-color: #bebfc5;
+    -fx-font-weight: bold;
+    -fx-border-color: #aaaaaa;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+
+#listP .table-cell {
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+}
+
+#listP .table-column {
+    -fx-alignment: center;
+}
+
+#listP .table-row-cell:hover {
+    -fx-background-color: #bbbbbb;
+}
+
+#listP .table-row-cell:selected {
+    -fx-background-color: #829ebd;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#listP .column-header {
+    -fx-background-color: #bebfc5;
+    -fx-font-weight: bold;
+    -fx-border-color: #aaaaaa;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+
+#btnSend {
+    -fx-background-color: green;
+
+}
+#btnSend:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+#btnClose {
+    -fx-background-color: #f55757;
+}
+#btnClose {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}

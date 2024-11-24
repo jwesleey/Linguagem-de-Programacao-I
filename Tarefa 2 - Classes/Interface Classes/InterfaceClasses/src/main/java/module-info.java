@@ -13,4 +13,8 @@ module org.example.interfaceclasses {
 
     opens org.example.interfaceclasses to javafx.fxml;
     exports org.example.interfaceclasses;
+    exports org.example.interfaceclasses.Classes;
+    opens org.example.interfaceclasses.Classes to javafx.fxml;
+    exports org.example.interfaceclasses.Controllers;
+    opens org.example.interfaceclasses.Controllers to javafx.fxml;
 }

@@ -11,9 +11,9 @@
 
 <AnchorPane fx:id="homepage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
             prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.example.interfaceclasses.Home">
+            fx:controller="org.example.interfaceclasses.Controllers.Home">
     <children>
-        <Pane layoutX="158.0" layoutY="171.0" prefHeight="343.0" prefWidth="590.0" style="-fx-background-color: E6EFA;"
+        <Pane layoutX="158.0" layoutY="171.0" prefHeight="343.0" prefWidth="590.0" style="-fx-background-color: white;"
               AnchorPane.bottomAnchor="75.0" AnchorPane.topAnchor="170.0"/>
         <GridPane alignment="CENTER" focusTraversable="true" hgap="10.0" layoutX="226.0" layoutY="224.0"
                   prefHeight="300.0" prefWidth="500.0" vgap="10.0" AnchorPane.bottomAnchor="100.0"

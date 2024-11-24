@@ -9,30 +9,43 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pageDoors" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interfaceclasses.PortasController">
+<AnchorPane fx:id="pageDoors" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.interfaceclasses.Controllers.PortasController">
     <children>
         <Label layoutX="24.0" layoutY="27.0" text="Classe Portas" underline="true">
             <font>
-                <Font name="Arial" size="18.0" />
+                <Font name="Arial" size="18.0"/>
             </font>
         </Label>
-        <GridPane alignment="CENTER" hgap="5.0" layoutX="80.0" layoutY="409.0" maxHeight="60.0" maxWidth="600.0" prefHeight="44.0" prefWidth="449.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="409.0">
+        <GridPane alignment="CENTER" hgap="5.0" layoutX="80.0" layoutY="409.0" maxHeight="60.0" maxWidth="600.0"
+                  prefHeight="44.0" prefWidth="449.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="111.0"
+                  AnchorPane.topAnchor="409.0">
             <columnConstraints>
-                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0"
+                                   prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0"/>
             </columnConstraints>
             <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
             </rowConstraints>
             <children>
-                <Button fx:id="btnabrir" mnemonicParsing="false" onAction="#actabrir" prefHeight="30.0" prefWidth="175.0" text="Abrir Porta" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-                <Button fx:id="btnfechar" mnemonicParsing="false" onAction="#actfechar" prefHeight="30.0" prefWidth="140.0" text="Fechar Porta" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-                <Button fx:id="btntrancar" mnemonicParsing="false" onAction="#acttrancar" prefHeight="30.0" prefWidth="178.0" text="Trancar Porta" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
-                <Label fx:id="label3" text="Label" textAlignment="CENTER" visible="false" wrapText="true" GridPane.columnIndex="1" />
+                <Button fx:id="btnabrir" mnemonicParsing="false" onAction="#actabrir" prefHeight="30.0"
+                        prefWidth="175.0" text="Abrir Porta" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS"
+                        GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS"/>
+                <Button fx:id="btnfechar" mnemonicParsing="false" onAction="#actfechar" prefHeight="30.0"
+                        prefWidth="140.0" text="Fechar Porta" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                        GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS"/>
+                <Button fx:id="btntrancar" mnemonicParsing="false" onAction="#acttrancar" prefHeight="30.0"
+                        prefWidth="178.0" text="Trancar Porta" GridPane.columnIndex="2" GridPane.halignment="CENTER"
+                        GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS"/>
+                <Label fx:id="label3" text="Label" textAlignment="CENTER" visible="false" wrapText="true"
+                       GridPane.columnIndex="1"/>
             </children>
         </GridPane>
-        <Button fx:id="back" layoutX="558.0" layoutY="418.0" mnemonicParsing="false" onAction="#backhome" text="Voltar" />
-        <MediaView fx:id="mediaplayer" fitHeight="350.0" fitWidth="350.0" layoutX="145.0" layoutY="65.0" />
+        <Button fx:id="back" layoutX="558.0" layoutY="418.0" mnemonicParsing="false" onAction="#backhome"
+                text="Voltar"/>
+        <MediaView fx:id="mediaplayer" fitHeight="350.0" fitWidth="350.0" layoutX="145.0" layoutY="65.0"/>
     </children>
 </AnchorPane>
